@@ -5,7 +5,19 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "proj-white": "#F5F5F5",
+        "proj-black": "#292929",
+        "proj-lightGray": "#DCDCDC",
+        "proj-darkGray": "#525252",
+        "proj-orange": "#FCBB15",
+        "proj-purple": "#661465",
+      },
+      fontFamily: {
+        Dragon: ["Dragon", "sans-serif"],
+      }
+    },
   },
   plugins: [],
 }
