@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Dragon";
-  src: url("./assets/fonts/Dragon/Dragon-Regular.ttf");
+  font-family: "Jura";
+  src: url("./assets/fonts/Jura-VariableFont_wght.ttf");
 }
 
 body {

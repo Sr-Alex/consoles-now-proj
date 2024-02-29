@@ -13,7 +13,7 @@ export default {
         "proj-purple": "#661465",
       },
       fontFamily: {
-        Dragon: ["Dragon", "sans-serif"],
+        Jura: ["Jura", "sans-serif"],
       },
     },
   },
