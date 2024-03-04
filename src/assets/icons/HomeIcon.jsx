@@ -1,0 +1,25 @@
+import PropTypes from "prop-types";
+
+function HomeIcon({ className }) {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+    >
+      <path
+        d="M10.2857 0.857143V1.71429H9.42857H8.57143V2.57143V3.42857H7.71429H6.85714V4.28572V5.14286H6H5.14286V6V6.85714H4.28571H3.42857V7.71429V8.57143H2.57143H1.71429V9.42857V10.2857H0.857143H0V11.1429V12H1.71429H3.42857V18V24H6H8.57143V19.7143V15.4286H12H15.4286V19.7143V24H18H20.5714V18V12H22.2857H24V11.1429V10.2857H23.1429H22.2857V9.42857V8.57143H21.4286H20.5714V7.71429V6.85714H19.7143H18.8571V6V5.14286H18H17.1429V4.28572V3.42857H16.2857H15.4286V2.57143V1.71429H14.5714H13.7143V0.857143V0H12H10.2857V0.857143Z"
+        fill="parentColor"
+        stroke="parentColor"
+      />
+    </svg>
+  );
+}
+
+HomeIcon.propTypes = {
+  className: PropTypes.string.isRequired,
+};
+
+export default HomeIcon;

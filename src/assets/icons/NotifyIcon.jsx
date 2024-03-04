@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-function SearchIcon({ className }) {
+function NotifyIcon({ className }) {
   return (
     <svg
       width="24"
@@ -10,7 +10,7 @@ function SearchIcon({ className }) {
       className={className}
     >
       <path
-        d="M17.2116 14.8272V0H0V16.8627H14.6611L21.7184 24L24 21.6925L17.2116 14.8272ZM13.9844 13.599H3.22718V3.26375H13.9844V13.599ZM6.99222 12.511H4.30291V9.79126H6.99222V12.511Z"
+        d="M8 1V2H7H6V3V4H5H4V9V14H3H2V17V20H5H8V21V22H9H10V23V24H12H14V23V22H15H16V21V20H19H22V17V14H21H20V9V4H19H18V3V2H17H16V1V0H12H8V1Z"
         fill="parentColor"
         stroke="parentColor"
       />
@@ -18,8 +18,8 @@ function SearchIcon({ className }) {
   );
 }
 
-SearchIcon.propTypes = {
+NotifyIcon.propTypes = {
   className: PropTypes.string.isRequired,
 };
 
-export default SearchIcon;
+export default NotifyIcon;
