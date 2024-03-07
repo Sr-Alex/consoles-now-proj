@@ -1,3 +1,5 @@
+import MoonIcon from "../assets/icons/MoonIcon.jsx";
+
 function ThemeSwitcher() {
   const toggleTheme = () => {
     const rootClasses = document.documentElement.classList;
@@ -5,12 +7,15 @@ function ThemeSwitcher() {
     if (rootClasses.contains("dark")) {
       rootClasses.remove("dark");
     } else {
-        rootClasses.add("dark")
+      rootClasses.add("dark");
     }
   };
   return (
-    <button className="absolute bottom-4 right-4 block w-8 h-8 bg-proj-purple" onClick={toggleTheme}>
-      ThemeSwitcher
+    <button
+      className="absolute bottom-4 right-4 iconButton"
+      onClick={toggleTheme}
+    >
+      <MoonIcon className={"iconButton-icon w-8 h-auto"} />
     </button>
   );
 }

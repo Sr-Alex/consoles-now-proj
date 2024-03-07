@@ -3,12 +3,20 @@
 @tailwind utilities;
 
 @layer components {
-  .btn-link {
-    @apply flex items-center justify-center w-10 h-10 rounded-full shadow-sm shadow-proj-purple bg-proj-lightGray transition-colors duration-200 hover:shadow-md hover:shadow-proj-purple active:shadow-inner active:shadow-proj-purple dark:hover:shadow-proj-orange dark:shadow-proj-orange dark:bg-proj-darkGray dark:active:shadow-proj-orange [&>*]:active:fill-proj-white [&>*]:dark:active:fill-proj-black;
+  .iconButton {
+    @apply flex items-center justify-center w-10 h-10 rounded-full shadow-sm shadow-proj-purple bg-proj-lightGray transition-all duration-200 hover:shadow-md hover:shadow-proj-purple active:shadow-inner active:shadow-proj-purple dark:hover:shadow-proj-orange dark:shadow-proj-orange dark:bg-proj-darkGray dark:active:shadow-proj-orange [&>*]:active:fill-proj-white [&>*]:dark:active:fill-proj-black;
   }
 
-  .btn-link-icon {
-    @apply w-6 h-6 fill-proj-darkGray dark:fill-proj-lightGray transition-colors duration-200;
+  .iconButton-icon {
+    @apply w-6 h-6 fill-proj-darkGray dark:fill-proj-lightGray transition-all duration-200;
+  }
+
+  .navArrowButton {
+    @apply block w-8 h-8 rounded-full transition-all duration-200 shadow-sm hover:shadow-md hover:shadow-proj-purple shadow-proj-purple active:shadow-inner active:shadow-proj-purple dark:shadow-proj-orange dark:hover:shadow-md dark:hover:shadow-proj-orange dark:active:shadow-inner  dark:active:shadow-proj-orange;
+  }
+
+  .scroll-hidden::-webkit-scrollbar {
+    display: none;
   }
 }
 

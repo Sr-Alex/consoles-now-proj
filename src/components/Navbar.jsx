@@ -15,11 +15,11 @@ function Navbar() {
         </h3>
       </figure>
       <nav className="flex items-center justify-between max-w-48 w-2/3 h-full">
-        <Link to={"/"} className="btn-link">
-          <HomeIcon className="btn-link-icon" />
+        <Link to={"/"} className="iconButton">
+          <HomeIcon className="iconButton-icon" />
         </Link>
-        <Link to={"/"} className="btn-link">
-          <NotifyIcon className="btn-link-icon" />
+        <Link to={"/"} className="iconButton">
+          <NotifyIcon className="iconButton-icon" />
         </Link>
         <ProfileMiniature className="fill-proj-darkGray dark:fill-proj-lightGray" />
       </nav>
