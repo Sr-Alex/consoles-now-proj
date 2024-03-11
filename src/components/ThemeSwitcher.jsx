@@ -12,7 +12,7 @@ function ThemeSwitcher() {
   };
   return (
     <button
-      className="absolute bottom-4 right-4 iconButton"
+      className="fixed bottom-4 right-4 iconButton"
       onClick={toggleTheme}
     >
       <MoonIcon className={"iconButton-icon w-8 h-auto"} />

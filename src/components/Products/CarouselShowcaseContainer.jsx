@@ -1,26 +1,24 @@
 import { useRef } from "react";
 
 import PropTypes from "prop-types";
-import ProductVitrine from "./ProductVitrine";
+import ProductShowCase from "./ProductShowcase";
 import ArrowIcon from "../../assets/icons/ArrowIcon";
 
-function Vitrine({ products }) {
+function CarouselShowcaseContainer({ products }) {
   const carousel = useRef(null);
 
   const scroll = (to = 0) => {
     carousel.current.scrollTo(carousel.current.scrollLeft + to, 0);
   };
 
-  console.log("Vitrine renderizada!");
-
   return (
     <section className="relative">
       <ul
         ref={carousel}
-        className="scroll-hidden flex scroll-smooth snap-mandatory snap-x w-screen h-48 overflow-x-auto bg-proj-lightGray dark:bg-proj-darkGray"
+        className="flex scroll-smooth scroll-hidden overflow-x-auto  overflow-y-hidden snap-mandatory snap-x w-screen h-48 bg-proj-lightGray dark:bg-proj-darkGray"
       >
         {products.map((prod) => (
-          <ProductVitrine key={prod.id} product={prod} />
+          <ProductShowCase key={prod.id} product={prod} />
         ))}
       </ul>
       <button
@@ -39,8 +37,8 @@ function Vitrine({ products }) {
   );
 }
 
-Vitrine.propTypes = {
+CarouselShowcaseContainer.propTypes = {
   products: PropTypes.array.isRequired,
 };
 
-export default Vitrine;
+export default CarouselShowcaseContainer;
