@@ -15,8 +15,15 @@
     @apply block w-8 h-8 rounded-full transition-all duration-200 shadow-sm shadow-proj-purple hover:shadow-md hover:shadow-proj-purple  active:shadow-inner active:shadow-proj-purple dark:shadow-proj-orange dark:hover:shadow-md dark:hover:shadow-proj-orange dark:active:shadow-inner  dark:active:shadow-proj-orange;
   }
 
+}
+
+@layer utilities {
   .scroll-hidden::-webkit-scrollbar {
     display: none;
+  }
+
+  .highlight {
+    @apply cursor-pointer duration-200 hover:shadow-md hover:shadow-proj-purple hover:scale-105 active:scale-100 dark:hover:shadow-proj-orange
   }
 }
 
