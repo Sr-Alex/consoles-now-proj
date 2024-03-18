@@ -1,12 +1,13 @@
 import PropTypes from "prop-types";
 
 import ProductsGrid from "../ProductsGrid";
-import HeartIcon from "../../../assets/icons/HeartIcon";
 import TagScroller from "./TagScroller";
 import TopSoldShowCase from "./TopSoldShowCase";
 
 function RoundedShowcaseContainer({ productList }) {
-     const productTags = new Set(productList.map((prod) => prod.tag));
+     const productTags = Array.from(
+          new Set(productList.map((prod) => prod.tag))
+     );
      const topSoldProduct = productList.sort((a, b) => a.sold - b.sold)[0];
 
      return (
