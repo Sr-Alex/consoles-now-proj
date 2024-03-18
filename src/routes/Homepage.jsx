@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import LinkProductSearcher from "../components/Searcher/LinkProductSearcher";
 import CarouselShowcaseContainer from "../components/Products/CarouselShowcaseContainer";
-import RoundedShowcaseContainer from "../components/Products/RoundedProductListContainer";
+import RoundedShowcaseContainer from "../components/Products/RoundedProductListContainer/RoundedProductListContainer";
 
 function Homepage() {
   const [productList, setProductList] = useState([
@@ -29,7 +29,7 @@ function Homepage() {
       name: "Nintendo Switch",
       tag: "Portáteis",
       sold: 231,
-      price: 25000,
+      price: 2500,
       imgURL:
         "https://a-static.mlcdn.com.br/800x560/nintendo-switch-32gb-hac-001-01-1-controle-joy-con-vermelho-e-azul/magazineluiza/043082000/d38296e874a7d5f3e06ff0d8704bb123.jpg",
     },
